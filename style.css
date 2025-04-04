@@ -1,0 +1,111 @@
+*{
+      margin: 0;
+      padding: 0%;
+      box-sizing: border-box;
+
+}
+body {
+    overflow: hidden;
+    background-color: rgba(19, 19, 221, 0.303);
+}
+
+.container{
+      padding: 50px ;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    
+}
+
+.bigBOx{
+      border: 5px solid black;
+      width:500px ;
+      background-color: aqua;
+}
+
+.listbox{
+      width: 100%;
+      height: 500px;
+      border-bottom: 5px solid black;
+      overflow: auto;
+}
+.insertbox{
+      height: 40px;
+      display: flex;
+      flex-direction: row;
+      /* padding: 4px; */
+
+}
+.insertbox input{
+      width: 80%;
+
+}
+.insertbox button{
+     width: 20%;
+     background-color: rgb(67, 67, 241);
+     color: white;
+     font-weight: 700;
+     font-size: 15px;
+}
+button:active {
+    background-color: rgb(113, 113, 255);
+}
+input:hover {
+   border: 2px solid rgb(105, 105, 234);
+}
+.list {
+      border: 2px solid blue;
+      margin: 0.5em;
+      border-radius: 0.5em ;
+      padding: 1.2em;
+      background-color: rgb(162, 255, 255);
+}
+
+
+.popup{
+       position: absolute;
+       width: auto;
+       height: auto;
+       border: 2px solid rgb(255, 255, 255) ;
+      display: flex;
+      flex-direction: column;
+      transition: ease-in ;
+      display: none;
+
+}
+
+.popup p{
+        padding: 12px;
+        color: rgb(255, 255, 255);
+        background-color: black;
+}
+.options {
+       width: 100%;
+       height: 2em;
+        display: flex;
+        flex-direction:row ;
+}
+.options button{
+        width: 50%;
+        
+}
+.options button:first-child{
+      background-color: rgb(43, 255, 43);
+      border: none; 
+      font-weight: 700;
+      color: black;
+
+}
+.options button{
+      background-color: rgb(255, 12, 12);
+      border: none; 
+      color: white;
+      font-weight: 800;
+
+        
+}
+.listbox {
+      scrollbar-width: none; /* Or "none", or a length value like "8px" */
+    }
